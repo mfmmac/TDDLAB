@@ -6,7 +6,7 @@ namespace ROSHAMBO
 {
     public class Roshambo
     {
-        public string RockPaperScissors(string playerOne, string playerTwo)
+        public string Play(string playerOne, string playerTwo)
         {
             var result = "";
             if ((playerOne == "Rock" && playerTwo == "Scissors") || playerTwo == "Rock" && playerOne == "Scissors")
@@ -15,15 +15,15 @@ namespace ROSHAMBO
             }
             else if ((playerOne == "Scissors" && playerTwo == "Paper") || playerTwo == "Paper" && playerOne == "Scissors")
             {
-                result = "Scissors Wins";
+                result = "Scissors Wins!";
             }
             else if ((playerOne == "Paper" && playerTwo == "Rock") || playerTwo == "Rock" && playerOne == "Paper")
             {
-                result = "Paper Wins";
+                result = "Paper Wins!";
             }
             else
             {
-                result = "Tie";
+                result = "Tie!";
             }
             return result;
         }
